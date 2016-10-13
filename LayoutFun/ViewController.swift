@@ -23,6 +23,8 @@ class ViewController: UIViewController {
         turnOffAutoResizingOnAllViews()
         setupTheConstraints()
         setupColors()
+        
+
     }
     
 }
@@ -31,7 +33,41 @@ class ViewController: UIViewController {
 extension ViewController {
     
     func setupTheConstraints() {
-        // TODO: Create all the constraints (in code) for the various views
+        
+        
+        
+        //red square
+        redView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor).isActive = true
+        redView.widthAnchor.constraint(equalTo: self.view.widthAnchor, multiplier: 0.5).isActive = true
+        redView.heightAnchor.constraint(equalTo: redView.widthAnchor).isActive = true
+        redView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
+        
+        
+        //orange square
+        orangeView.bottomAnchor.constraint(equalTo: redView.topAnchor).isActive = true
+        orangeView.widthAnchor.constraint(equalTo: redView.widthAnchor, multiplier: 0.75).isActive = true
+        orangeView.heightAnchor.constraint(equalTo: orangeView.widthAnchor).isActive = true
+        orangeView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
+        
+        
+        //yellow square
+        yellowView.bottomAnchor.constraint(equalTo: orangeView.topAnchor).isActive = true
+        yellowView.widthAnchor.constraint(equalTo: orangeView.widthAnchor, multiplier: 0.75).isActive = true
+        yellowView.heightAnchor.constraint(equalTo: yellowView.widthAnchor).isActive = true
+        yellowView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
+        
+        //green square
+        greenView.bottomAnchor.constraint(equalTo: yellowView.topAnchor).isActive = true
+        greenView.widthAnchor.constraint(equalTo: yellowView.widthAnchor, multiplier: 0.75).isActive = true
+        greenView.heightAnchor.constraint(equalTo: greenView.widthAnchor).isActive = true
+        greenView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
+        
+        
+        //blue square
+        blueView.bottomAnchor.constraint(equalTo: greenView.topAnchor).isActive = true
+        blueView.widthAnchor.constraint(equalTo: greenView.widthAnchor, multiplier: 0.75).isActive = true
+        blueView.heightAnchor.constraint(equalTo: blueView.widthAnchor).isActive = true
+        blueView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
         
         
     }
